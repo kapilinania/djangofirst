@@ -15,8 +15,13 @@ def coursenext(request,courseid):
 
 def homePage(request):
     data = {
-        'title' : 'kapil',
-        'body' : 'welcome to kapil',
-        'clist'  : ['php', 'java','c']
+        'title': 'kapil',
+        'body': 'welcome to kapil',
+        'clist' : ['php', 'java','c'],
+        'number': [10, 20, 30, 40, 50, 60],
+        'student': [
+            {'name': 'kapil', 'mobile': 9828522814},
+            {'name': 'test', 'mobile': 8575895574},
+        ]
     }
-    return  render(request, "index.html",data)
+    return  render(request, 'index.html', data)

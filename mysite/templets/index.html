@@ -9,6 +9,21 @@
 </head>
 <body>
   <h3> {{body}} </h3>
-<h4>{{clist}}</h4>
+  <h4>{{clist}}</h4>
+  {% for i in clist %}
+   <div>{{forloop.first}}: {{i}}</div>
+  {% endfor %}
+<table border="1" cellpadding="10px">
+    <tr>
+        <th>name</th>
+        <th>phone</th>
+    </tr>
+    {% for d in student%}
+    <tr>
+        <td>{{d.name}}</td>
+        <td>{{d.mobile}}</td>
+    </tr>
+    {% endfor %}
+</table>
 </body>
 </html>
