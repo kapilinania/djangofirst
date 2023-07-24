@@ -25,3 +25,4 @@ def homePage(request):
         ]
     }
     return  render(request, 'index.html', data)
+
