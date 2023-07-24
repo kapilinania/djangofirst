@@ -17,7 +17,7 @@ def homePage(request):
     data = {
         'title': 'kapil',
         'body': 'welcome to kapil',
-        'clist' : ['php', 'java','c'],
+        'clist': ['php', 'java','c'],
         'number': [10, 20, 30, 40, 50, 60],
         'student': [
             {'name': 'kapil', 'mobile': 9828522814},
